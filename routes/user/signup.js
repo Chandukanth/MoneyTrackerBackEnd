@@ -3,9 +3,7 @@ const User = require("../../models/User");
 
 const signup = async (req, res) => {
     const { email, password, name, phone } = req.body;
-    console.log("🚀 ~ file: auth.js:8 ~ router.post ~ req.body:", req.body)
-    const fullName = name;
-    const phoneNumber = phone;
+   
     let newPassword = md5Password(password)
     try {
         const existingUser = await User.findOne({ where: { email } });

@@ -1,26 +1,26 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../database/connection');
 
-const User = sequelize.define('User', {
+const Salary = sequelize.define('salaries', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   },
-  email: {
-    type: DataTypes.STRING,
+  user_id: {
+    type: DataTypes.INTEGER,
     allowNull: false,
     unique: true,
   },
-  password: {
+  salary: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  fullName: {
+  pg_amount: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  phoneNumber: {
+  recharge_amount: {
     type: DataTypes.STRING,
     allowNull: false,
   },
@@ -32,10 +32,6 @@ const User = sequelize.define('User', {
     type: DataTypes.DATE,
     allowNull: false,
   },
-  session_id: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
 });
 
-module.exports = User;
+module.exports = Salary;
