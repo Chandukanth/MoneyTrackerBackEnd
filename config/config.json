@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "chandu",
+    "password": "chandu23",
+    "database": "testing_db",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "chandu",
+    "password": "chandu23",
+    "database": "testing_db",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "chandu",
+    "password": "chandu23",
+    "database": "testing_db",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
