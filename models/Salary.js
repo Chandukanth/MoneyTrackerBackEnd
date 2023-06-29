@@ -24,6 +24,10 @@ const Salary = sequelize.define('salaries', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  remaining_amount: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   createdAt: {
     type: DataTypes.DATE,
     allowNull: false,

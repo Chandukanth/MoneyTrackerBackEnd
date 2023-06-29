@@ -10,7 +10,7 @@ const get = async (req, res) =>{
 
     const SalaryDetails = await Salary.findOne({where:{user_id : req.params.userId}})
    if(SalaryDetails){
-    let data = {id : SalaryDetails?.id, userId :SalaryDetails?.user_id, salary:SalaryDetails?.salary, pagAmount : SalaryDetails?.pg_amount, rechargeAmount : SalaryDetails?.recharge_amount}
+    let data = {id : SalaryDetails?.id, userId :SalaryDetails?.user_id, salary:SalaryDetails?.salary, pagAmount : SalaryDetails?.pg_amount, rechargeAmount : SalaryDetails?.recharge_amount, remaining_amount : SalaryDetails?.remaining_amount}
     return res.json(data)
    }else{
     return res.status(404).json({ error: 'Add Your details' });
