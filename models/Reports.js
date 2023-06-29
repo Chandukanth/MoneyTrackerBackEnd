@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../database/connection');
 
-const Salary = sequelize.define('salaries', {
+const Report = sequelize.define('reports', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -37,4 +37,4 @@ const Salary = sequelize.define('salaries', {
   },
 });
 
-module.exports = Salary;
+module.exports = Report;

@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const user = require("./routes/user/index")
 const salary = require("./routes/salary/index")
+const reports = require("./routes/reports/index")
 const sequelize = require('./database/connection');
 
 const app = express();
@@ -11,6 +12,7 @@ app.use(express.json());
 
 app.use('/user/v1', user);
 app.use('/v1/salary', salary)
+app.use("/v1/report", reports)
 
 sequelize
   .authenticate()
