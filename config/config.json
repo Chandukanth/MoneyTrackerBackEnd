@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "chandu",
-    "password": "chandu23",
-    "database": "testing_db",
-    "host": "localhost",
+    "username": "postgress",
+    "password": "n1w4qncreOxm7CEns6leUIiXRu03ftPa",
+    "database": "testing_db_cwzl",
+    "host": "dpg-cieo7ndgkuvlk1hh8ofg-a",
     "port": 5432,
     "dialect": "postgres"
   },
